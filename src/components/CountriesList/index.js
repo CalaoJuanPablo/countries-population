@@ -1,6 +1,7 @@
 import React from 'react'
-import { CountryCard } from './CountryCard'
-import { getAllCountries } from '../services'
+import { CountryCard } from '../CountryCard'
+import { getAllCountries } from '../../services'
+import styles from './styles.module.css'
 
 export function CountriesList() {
   const [countries, setCountries] = React.useState([])
@@ -27,14 +28,16 @@ export function CountriesList() {
   }, [])
 
   return (
-    <>
+    <div className={styles.CountriesList}>
       {isLoading ? (
         <h1>Loading...</h1>
       ) : isError ? (
         <h1>Error</h1>
       ) : (
-        countries.map((country, idx) => <CountryCard {...country} />)
+        countries.map((country, idx) => (
+          <CountryCard key={`country-${idx.toString()}`} {...country} />
+        ))
       )}
-    </>
+    </div>
   )
 }
