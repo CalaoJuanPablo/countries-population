@@ -1,7 +1,7 @@
 import React from 'react'
 import { CountryCard } from '../CountryCard'
 import { getAllCountries } from '../../services'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 
 export function CountriesList() {
   const [countries, setCountries] = React.useState([])

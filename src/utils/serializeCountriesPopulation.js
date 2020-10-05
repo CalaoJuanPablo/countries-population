@@ -3,7 +3,7 @@ export function serializeCountriesPopulation(countries) {
     name: country.name,
     flag: country.flag,
     region: country.region,
-    capital: country.capita,
+    capital: country.capital,
     population: country.population
   }))
 }

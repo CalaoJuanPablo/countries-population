@@ -1,0 +1,40 @@
+.CountryCard {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  &__flag {
+    flex-shrink: 0;
+    width: 70px;
+    height: 45px;
+    border: 1px solid #ddd;
+    margin: 0;
+    margin-right: 16px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  &__info {
+    text-align: left;
+    &--name {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 1.5rem;
+    }
+    &--capital {
+      margin: 0;
+      font-size: 1rem;
+    }
+    &--region {
+      color: #666;
+      margin-top: 0;
+    }
+    &--population {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+}
