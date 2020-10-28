@@ -1,3 +1,6 @@
+# Countries population
+A simple CRA for for showing the population of every country in the world. You can see the demo [here](https://countries-population.vercel.app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
